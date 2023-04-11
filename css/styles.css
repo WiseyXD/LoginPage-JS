@@ -26,12 +26,28 @@ a{
 
 .form
 {
+    position: absolute;
     max-width: 380px;
     background-color: white;
     border-radius: 6px;
     width: 100%;
     padding: 20px;
+    
 }
+.form.signup
+{
+    z-index: -1;
+    pointer-events: none;
+}
+
+.form.signup.show
+{
+    z-index: 2;
+    pointer-events: all;
+}
+
+
+
 
 header
 {
@@ -185,4 +201,11 @@ header
     vertical-align: middle;
     position: absolute;
     left: 5%;
+}
+
+/* 
+Just to centre the already have an account line the below code is used */
+.login
+{
+    text-align: center;
 }
